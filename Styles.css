@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9&family=Pixelify+Sans:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Lato&family=Nunito&family=Playfair+Display:ital@1&family=Prata&family=Raleway:ital,wght@1,100&family=Roboto&family=Roboto+Condensed&family=Teko&display=swap');
+body{
+
+	position: relative;
+ 	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	height: 100vh;
+  	margin: 0;
+  	background-image: url("duck.gif");
+  	background-size: cover;
+  	background-position: center;
+}
+
+.container{
+	position: relative;
+    text-align: center; /* Alinea el contenido al centro */
+    z-index: 1; /* Asegura que el contenido esté por encima del botón */
+  	font-family: "Pixelify Sans", sans-serif;
+  	font-optical-sizing: auto;
+  	font-weight: <weight>;
+  	font-style: normal;
+  	font-size: 25px;
+  	color: #233AF4;
+}
+
+.con2{
+
+  	font-family: "Pixelify Sans", sans-serif;
+  	font-optical-sizing: auto;
+  	font-weight: <weight>;
+  	font-style: normal;
+  	font-size: 45px;
+	color: #F00576;
+}
+
+.con3{
+
+	text-align: center;
+	font-family: "Pixelify Sans", sans-serif;
+  	font-optical-sizing: auto;
+  	font-weight: <weight>;
+  	font-style: normal;
+  	font-size: 40px;
+  	color: #F40801;
+}
+
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+.btn{
+
+	font-family: Raleway;
+	font-weight: 600;
+	font-size: 24px;
+	color: #9c3ab8;
+	background: linear-gradient(66deg, #95bee8 43%, #fa73ff 100%);
+	padding: 16px 18px;
+	border: solid #a11ede 2px;
+	box-shadow: rgb(0, 0, 0) 9px 7px 39px 1px;
+	border-radius: 50px 0px;
+	transition : 1539ms;
+	transform: translateY(0);
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	cursor: pointer;
+	text-transform: lowercase;
+}
+
+.btn-container {
+  	position: absolute;
+    bottom: 70px; /* Ajusta la distancia desde la parte inferior */
+    left: 47%; /* Centra horizontalmente */
+  	transform: translateX(-50%); /* Ajusta la posición al centro */
+    z-index: 2; /* Asegura que el botón esté por encima del contenido */
+}
+
+.btn:hover{
+	transition : 1539ms;
+	padding: 10px 45px;
+	transform : translateY(-0px);
+	background: linear-gradient(66deg, #95bee8 43%, #fa73ff 100%);
+	color: #2500cc;
+	border: solid 2px #0066cc;
+}
