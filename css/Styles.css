@@ -1,0 +1,124 @@
+@font-face {
+    font-family: 'SnoopyReg';
+    src: url('../fonts/snoopy_reg-webfont.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url("../img/sadSnoopy.jpg"); 
+  background-size: cover;
+  background-position: center;
+  font-family: "SnoopyReg", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400; 
+  font-style: normal;
+}
+
+.container {
+  position: relative; 
+  z-index: 1; 
+}
+
+.button-container {
+  display: flex; 
+  justify-content: center; 
+  position: relative; 
+  z-index: 0;
+}
+
+.content {
+  position: absolute;
+  top: -130px; 
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #73D32D; 
+  padding: 15px 70px; 
+  text-align: center;
+  font-size: 17px;
+  color: #2D362B;
+  border: solid #44AF09 2px;
+  box-shadow: rgb(0, 0, 0) 20px 7px 22px -5px;
+  border-radius: 20px; 
+}
+
+button {
+  display: inline-block; 
+  padding: 20px 30px;
+  font-size: 1.2em;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+#yes-btn {
+  position: relative;
+  font-family: 'SnoopyReg', sans-serif; 
+  font-weight: 400;   font-size: 20px;
+  color: #fff;
+  background-color: #51CBF0;
+  padding: 10px 30px;
+  border: solid #3A7D8C 2px;
+  box-shadow: rgb(0, 0, 0) 15px 7px 22px -5px;
+  border-radius: 50px;
+  transition: 1000ms;
+  transform: translateY(0);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  color: #387488;
+}
+
+#no-btn {
+  position: relative;
+  font-family: 'SnoopyReg', sans-serif; 
+  font-weight: 200; 
+  font-size: 20px;
+  color: #fff;
+  background-color: #FEA59D;
+  padding: 10px 30px;
+  border: solid #9F3649 2px;
+  box-shadow: rgb(0, 0, 0) 15px 7px 22px -5px;
+  border-radius: 50px;
+  transform: translateY(0);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  color: #942116;
+}
+
+#yes-btn:hover {
+  transition: 2105ms;
+  padding: 10px 50px;
+  transform: translateY(0); 
+  background-color: #6DDE8D;
+  color: #fff;
+  border: solid #4382AE 2px; 
+  animation: shake 0.8s ease infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  75% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(10px);
+  }
+}
