@@ -3,36 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Para mi amoe bonito</title>
+  <title>De Juanjo (y fotos de Sebas) pa ti</title>
   <link rel="stylesheet" href="css/Styles.css">
 </head>
 
 <body>
-
   <div class="container">
     <div class="button-container">
-      <a href="2nd/Parte2.html" id="yes-btn" style="text-decoration: none;">Sí, es sencillamente un amor más grande</a>
-      <button id="no-btn">Claro que no, ¿qué te pasa Juan idiota? Gaby te ama muchísimo más</button>
+      <a href="2nd/Parte2.html" id="yes-btn">Sí, es sencillamente un amor más grande :3</a>
+      <button id="no-btn">Claro que no, ¿qué te pasa Sebas idiota? Lina te ama muchísimo más</button>
+      <!-- Placeholder invisible para mantener el espacio -->
+      <div class="no-btn-placeholder" id="no-btn-placeholder" style="display: none;">Claro que no, ¿qué te pasa Sebas idiota? Lina te ama muchísimo más</div>
     </div>
     <div class="content">
-      ¿Cierto que Juan ama mucho más que Gaby?🤨
+      ¿Cierto que Sebas ama mucho más que Lina?🤨
     </div>
   </div>
-
   <script>
     const noButton = document.getElementById('no-btn');
+    const placeholder = document.getElementById('no-btn-placeholder');
+    
     noButton.addEventListener('mouseover', () => {
+      if (noButton.style.position !== 'fixed') {
+        noButton.style.position = 'fixed';
+        noButton.style.zIndex = '1000';
+        // Mostrar el placeholder para mantener el espacio
+        placeholder.style.display = 'flex';
+      }
       const maxX = window.innerWidth - noButton.offsetWidth;
       const maxY = window.innerHeight - noButton.offsetHeight;
       const randomX = Math.random() * maxX;
       const randomY = Math.random() * maxY;
-
-      const boundedX = Math.min(maxX, Math.max(0, randomX));
-      const boundedY = Math.min(maxY, Math.max(0, randomY));
-
-      noButton.style.position = 'fixed'; 
-      noButton.style.left = boundedX + 'px';
-      noButton.style.top = boundedY + 'px';
+      noButton.style.left = randomX + 'px';
+      noButton.style.top = randomY + 'px';
     });
   </script>
 </body>
