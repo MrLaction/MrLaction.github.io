@@ -12,9 +12,9 @@ body {
     flex-direction: column; 
     height: 100vh;
     margin: 0; 
-    background-image: url("../img/Sno.jpg");
-    background-size: cover; 
-    background-position: center; 
+    background-image: url("../img/HappyBTS.png");
+    background-size: cover;
+    background-position: center;
 }
 
 .container {
@@ -39,7 +39,7 @@ body {
 .con3 {
     margin-top: 20px; 
     font-size: 40px;
-    color: #4A350E;
+    color: #F51929;
 }
 
 .btn-link {
