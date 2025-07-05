@@ -12,8 +12,9 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  background-image: url("../img/sadSnoopy.jpg"); 
-  background-size: cover;
+  background-image: url("../img/demonSlayer.jpg"); 
+  background-size: auto;
+  background-repeat: repeat;
   background-position: center;
   font-family: "SnoopyReg", sans-serif;
   font-optical-sizing: auto;
@@ -27,9 +28,10 @@ body {
 }
 
 .button-container {
-  display: flex; 
-  justify-content: center; 
-  position: relative; 
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Espacio entre botones */
+  position: relative;
   z-index: 0;
 }
 
@@ -60,8 +62,9 @@ button {
 #yes-btn {
   position: relative;
   font-family: 'SnoopyReg', sans-serif; 
-  font-weight: 400;   font-size: 20px;
-  color: #fff;
+  font-weight: 400;   
+  font-size: 20px;
+  color: #387488;
   background-color: #51CBF0;
   padding: 10px 30px;
   border: solid #3A7D8C 2px;
@@ -73,7 +76,7 @@ button {
   flex-direction: row;
   align-items: center;
   cursor: pointer;
-  color: #387488;
+  text-decoration: none;
 }
 
 #no-btn {
@@ -81,18 +84,31 @@ button {
   font-family: 'SnoopyReg', sans-serif; 
   font-weight: 200; 
   font-size: 20px;
-  color: #fff;
+  color: #942116;
   background-color: #FEA59D;
   padding: 10px 30px;
   border: solid #9F3649 2px;
   box-shadow: rgb(0, 0, 0) 15px 7px 22px -5px;
   border-radius: 50px;
-  transform: translateY(0);
   display: flex;
   flex-direction: row;
   align-items: center;
   cursor: pointer;
-  color: #942116;
+}
+
+/* Placeholder para mantener el espacio del botón rojo */
+.no-btn-placeholder {
+  visibility: hidden;
+  font-family: 'SnoopyReg', sans-serif; 
+  font-weight: 200; 
+  font-size: 20px;
+  background-color: #FEA59D;
+  padding: 10px 30px;
+  border: solid #9F3649 2px;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 #yes-btn:hover {
